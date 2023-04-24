@@ -8,7 +8,7 @@ test('test', async ({ page }) => {
   await page.getByLabel('Login').press('CapsLock');
   await page.getByLabel('Login').fill('D');
   await page.getByLabel('Login').press('CapsLock');
-  await page.getByLabel('Login').fill('Ddiaz');
+  await page.getByLabel('Login').fill('barcelonafc');
   await page.getByLabel('First Name').click();
   await page.getByLabel('First Name').fill('diego');
   await page.getByLabel('First Name').press('ArrowDown');
@@ -28,8 +28,6 @@ test('test', async ({ page }) => {
   await page.getByLabel('Confirm Password').fill('Diaz1012*');
   await page.getByRole('button', { name: 'Register' }).click();
   await page.getByText('Registration is successful').click();
-  await page.getByText('Registration is successful').click();
-  await page.getByText('Registration is successful').click();
-  await page.locator('div').filter({ hasText: 'Register with Buggy Cars Rating Login Login is required Login cannot be more tha' }).nth(1).click();
-  await page.locator('div').filter({ hasText: 'Register with Buggy Cars Rating Login Login is required Login cannot be more tha' }).nth(1).click();
+ 
+
 });
